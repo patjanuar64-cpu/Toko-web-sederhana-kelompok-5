@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SRND STORE</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <!---HEADER DAN NAVIGASI-->
+   <header>
+    <h1>THE SRND STORE</h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="#banner">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#keranjang">Keranjang</a></li>
+            <li><a href="#checkout">Checkout</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li id="tentangMenu"><a href="tentang.html">Tentang Kami</a></li>     
+             <li id="loginMenu"><a href="login.html">Login</a></li>      
+              <li id="registerMenu"><a href="registrasi.html">Registrasi</a></li>           
+        </ul>
+    </nav>
+    <form>
+        <input type="text" placeholder="Cari Produk">
+        <button type="submit">Cari</button>
+    </form>
+   </header>
+    <!---HEADER DAN NAVIGASI-->
+    <!--BANNER-->
+    <section id="banner">
+        <img src="logo.jpg" width="350" height="350" style="border-radius: 50%;">
+        <div class="kolom">
+            <p class="deskripsi">Selamat datang di the srnd store</p>
+            <h2>Temukan produk terbaik pilihan anda</h2>
+            <p>Dapatkan diskon hingga 50% untuk produk pilihan</p>
+            <p><a href="WhatsApp Video 2025-09-30 at 13.23.59.mp4" class="tbl-pink">Pelajari lebih lanjut tentang kami</a></p>
+
+
+            <h2>Produk Kami</h2>
+            </div>
+    </section>
+    <!--BANNER-->
+
+    <!--Produk-->
+    <section id="produk">
+
+        <div class="produk-item">
+            <img src="botmil.jpg" alt="produk">
+            <h3>Botol minum cantik 900ml air lucu comel</h3>
+            <p>Rp.290.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="botol.jpg" alt="produk">
+            <h3>Botol minum karakter hewan 900ml</h3>
+            <p>Rp.215.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="tambler.jpg" alt="produk">
+            <h3>Botol minum dekorasi boneka 900ml cute</h3>
+            <p>Rp.478.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="panda.jpg" alt="produk">
+            <h3>Botol minum motif bunga dan panda imut</h3>
+            <p>Rp.154.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="dog.jpg" alt="produk">
+            <h3>Tambler happy pals 520ml stainless</h3>
+            <p>Rp.268.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="cat.jpg" alt="produk">
+            <h3>Botol minum motif cat lucu</h3>
+            <p>Rp.387.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="ter.jpg" alt="produk">
+            <h3>Tumbler aesthetic colour lucu 650ml</h3>
+            <p>Rp.50.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+          <div class="produk-item">
+            <img src="sweet.jpg" alt="produk">
+            <h3>Tumbler couple sweet motif kartun</h3>
+            <p>Rp.98.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+
+        <div class="produk-item">
+            <img src="kud.jpg" alt="produk">
+            <h3>Botol minum motif unicorn</h3>
+            <p>Rp.139.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+        </div>
+    </section>
+    <!--PRODUK-->
+
+     <!--KATALOG-->
+     <div style="text-align: center; margin-top: 30px;">
+        <a href="kat.jpg" class="tbl-biru">Lihat Katalog Lengkapnya</a>
+     </div>
+     <!--KATALOG-->
+
+     <!--KERANJANG-->
+     <section id="keranjang">
+        <h2>Keranjang Belanja</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="daftar-keranjang"></tbody>
+        </table>
+        <p>Total Belanja: Rp <span id="total-belanja">0</span></p>
+     </section>
+     <!--KERANJANG-->
+
+     <!--CHECKOUT-->
+     <Section id="checkout">
+        <h2>Checkout</h2>
+        <form onsubmit="kirimwhatsapp(event)">
+            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+            <input type="text" id="alamat" placeholder="Alamat" required>
+            <input type="text" id="hp" placeholder="No Hp" required>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+     </Section>
+    <!--CHECKOUT-->
+
+    <!--KONTAK-->
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Email : rplsekoci.@gmail.com</p>
+        <p>Website : rplsekoci.com</p>
+        <p>Whatshapp : 0831-6502-6463</p>
+    </section>
+     <!--KONTAK-->
+
+     <!--NOTIFIKASI-->
+     <div id="toast"></div>
+      <!--NOTIFIKASI-->
+
+     <!--FOOTER--> 
+     <footer>
+        <p>Copyright&copy;2025 Rpl Sekoci.</p>
+     </footer>
+     <!--FOOTER-->
+
+ <script src="script.js"></script>
+
+</body>
+</html>

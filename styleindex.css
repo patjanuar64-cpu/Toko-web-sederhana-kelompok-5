@@ -1,0 +1,174 @@
+/* RESET DASAR */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: lightpink;
+}
+ /* HEADER */
+header {
+    background: lightpink;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+form input,
+form button {
+    padding: 5px;
+}
+
+/* HEADER */
+
+
+ /* BANNER */
+ #banner {
+    background: lightpink;
+    padding: 40px;
+    text-align: center;
+ }
+  /* BANNER */
+
+  /* PRODUK */
+  #produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .produk-item {
+    background: snow;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transfrom 0.2s;
+  }
+
+  .produk-item img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .produk-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #333;
+    color: white;
+  }
+    /* PRODUK */
+
+    /* KERANJANG */
+    #keranjang {
+        padding: 20px;
+    }
+
+    #keranjang table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    #keranjang th,
+    #keranjang td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #keranjang th {
+        background: white;
+        font-weight: bold;
+
+    }
+
+    #keranjang p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    /* KERANJANG */
+
+   /* CHECKOUT */
+   #checkout {
+    padding: 20px;
+   }
+
+   #checkout form input,
+   #checkout form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+   }
+
+   #checkout form button {
+    background: black;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+   }
+
+   #checkout form button:hover {
+    background: #555;
+   }
+    /* CHECKOUT */
+
+    /* KONTAK */
+    #kontak {
+        padding: 20px;
+        background: #ddd;
+        margin-left: 10px;
+    }
+     /* KONTAK */
+
+     /* NOTIFIKASI */
+     #toast {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #333;
+        color: #ddd;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: none;
+     }
+     /* NOTIFIKASI */
+
+     /* FOOTER */
+     footer {
+        text-align: center;
+        padding: 15px;
+        background: #333;
+        color: white;
+     }
+      /* FOOTER */
